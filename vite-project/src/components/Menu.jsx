@@ -45,6 +45,14 @@ function Menu (){
                 <h1 className='titulo-somos'>Quem Somos?</h1>
                 <p className='paragrafo-somos'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.</p>
             </div>
+            <div>
+                <div>
+                    
+                </div>
+                <div>
+
+                </div>
+            </div>
         </body>
         
     )
