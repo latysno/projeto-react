@@ -11,14 +11,23 @@ function Menu (){
     return(
         <body>
             <header className="cabecalho">
-                <a href="">Início</a>
-                <a href="">Sobre</a> 
-                <a href="./login.jsx">Entrar/Cadastrar</a>
+                <div className='teste'>
+                    <a className='ancora' href="">Início</a>
+                    <a className='ancora' href="">Sobre</a> 
+                    <a className='ancora' href="./login.jsx">Entrar/Cadastrar</a>
+                </div>
             </header>
 
             <div className="complemento">
+                <div className='text-pai'>
+                    <div className='text'>
+                        <h1 className='titulo'>Lorem Ipsum</h1>
+                        <p className='paragrafo'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim corporis repudiandae eveniet magnam molestiae atque, ipsam impedit autem ipsum, eligendi expedita? Error obcaecati, voluptatibus et tempore delectus rerum soluta voluptates!</p>
+                        <button className='style-button'>Conheça mais</button>
+                    </div>
+                </div>
                 <div className='carousel'>
-                    <Swiper
+                <Swiper
                     slidesPerView={1}
                         // pagination= {{clickable: true}}
                         navigation
@@ -27,9 +36,14 @@ function Menu (){
                             <SwiperSlide key={item.id}>
                                 <img src={item.image} alt="Slider" className="slide-item"/>
                             </SwiperSlide>
-                        ))}
-                    </Swiper>
+                    ))}
+                </Swiper>
                 </div>
+            </div>
+
+            <div className='quem-somos'>
+                <h1 className='titulo-somos'>Quem Somos?</h1>
+                <p className='paragrafo-somos'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.</p>
             </div>
         </body>
         
