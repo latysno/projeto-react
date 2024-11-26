@@ -1,5 +1,5 @@
 import {Swiper, SwiperSlide} from 'swiper/react'
-
+import tailwindConfig from '../../tailwind.config'
 const data =[
     {id:1 , image:'https://i.pinimg.com/736x/e3/02/4b/e3024bd9175a500bb1a88bcd1b480f59.jpg'},
     {id:2 , image:'https://i.pinimg.com/736x/2e/92/0e/2e920ec646bc047298f88c77368301f9.jpg'},
@@ -41,18 +41,27 @@ function Menu (){
                 </div>
             </div>
 
-            <div className='quem-somos'>
+            <div className='centralizar-title'>
                 <h1 className='titulo-somos'>Quem Somos?</h1>
                 <p className='paragrafo-somos'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.</p>
             </div>
-            <div>
-                <div>
-                    
+            <div className='container'>
+                <div className='imagem-container'>
+                    <img src="/src/assets/image/teste.jpeg" alt="" srcset="" />
+                    <p className='title-1'>Lorem ipsum dolor sit amet, consectetur </p>
                 </div>
-                <div>
-
+                <div className='grafico-container'>
+                    <img src="/src/assets/image/image16.png" alt="" srcset="" />
+                    <p className='title-2'>Lorem ipsum dolor sit amet, consectetur </p>
                 </div>
             </div>
+
+            <div className='centralizar-title'>
+                <h1 className=''>Painel da Primeira Infância</h1>    
+            </div>
+            <footer className='rodape'>
+                
+            </footer>
         </body>
         
     )
