@@ -60,10 +60,41 @@ function Menu (){
                 <h1 className=''>Painel da Primeira Infância</h1>   
             </div>
             <div className='dashboard'>
-                
+                <div className='card'>
+
+                </div>
+                <div className='card2'>
+
+                </div>
+                <div className='card3'>
+
+                </div>
+                <div className='card4'>
+
+                </div>
+                <div className='card5'>
+
+                </div>
+                <div className='card6'>
+
+                </div>
             </div>
+            
             <footer className='rodape'>
-                
+                <div className='subtitles-footer'>
+                    <h2>Fale Conosco</h2>
+                    <h2>Parcerias</h2>
+                </div>
+                <div className='parceiros'>
+                    <div className='parceiro-01'></div>
+                    <div className='parceiro-02'></div>
+                    <div className='parceiro-03'></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </footer>
         </body>
         
