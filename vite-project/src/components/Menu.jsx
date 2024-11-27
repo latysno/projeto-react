@@ -57,7 +57,10 @@ function Menu (){
             </div>
 
             <div className='centralizar-title'>
-                <h1 className=''>Painel da Primeira Infância</h1>    
+                <h1 className=''>Painel da Primeira Infância</h1>   
+            </div>
+            <div className='dashboard'>
+                
             </div>
             <footer className='rodape'>
                 
