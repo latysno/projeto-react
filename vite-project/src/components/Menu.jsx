@@ -78,6 +78,9 @@ function Menu (){
                 <div className='card6'>
 
                 </div>
+                <div className='card7'>
+
+                </div>
             </div>
             
             <footer className='rodape'>
@@ -86,14 +89,38 @@ function Menu (){
                     <h2>Parcerias</h2>
                 </div>
                 <div className='parceiros'>
-                    <div className='parceiro-01'></div>
-                    <div className='parceiro-02'></div>
-                    <div className='parceiro-03'></div>
+                    <div className='father-parceiro'>
+                        <div className='parceiro-bloco'></div>
+                        <div className='parceiro-bloco'></div>
+                        <div className='parceiro-bloco'></div>
+                    </div>
+                    <div className='father-parceiro'>
+                        <div className='parceiro-bloco'></div>
+                        <div className='parceiro-bloco'></div>
+                        <div className='parceiro-bloco'></div>
+                    </div>
                 </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div className='redes-socias'>
+                    <div className='redes-colection'> 
+                        <div className='redes'>
+                            <h3>EMAIL</h3>
+                            <p>email@email.com.br</p>
+                        </div>
+                        <div className='redes'>
+                            <h3>INSTAGRAM</h3>
+                            <p>@conta_conta</p>
+                        </div>
+                    </div>
+                    <div className='redes-colection'>
+                        <div className='redes'>
+                            <h3>WHATSAPP</h3>
+                            <p>(00) 0000-0000</p>
+                        </div>
+                        <div className='redes'>
+                            <h3>FACEBOOK</h3>
+                            <p>@conta_conta</p>
+                        </div>
+                    </div>
                 </div>
             </footer>
         </body>
