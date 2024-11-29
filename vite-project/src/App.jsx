@@ -1,7 +1,7 @@
 import './App.css'
 import Menu from './components/Menu'
 import Login from './components/Login'
-import { BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (

@@ -1,5 +1,6 @@
 import {Swiper, SwiperSlide} from 'swiper/react'
 import tailwindConfig from '../../tailwind.config'
+import { Link } from 'react-router-dom'
 const data =[
     {id:1 , image:'https://i.pinimg.com/736x/e3/02/4b/e3024bd9175a500bb1a88bcd1b480f59.jpg'},
     {id:2 , image:'https://i.pinimg.com/736x/2e/92/0e/2e920ec646bc047298f88c77368301f9.jpg'},
@@ -12,10 +13,15 @@ function Menu (){
         <body>
             <header className="cabecalho">
                 <div className='teste'>
-                    <a className='ancora' href="">Início</a>
-                    <a className='ancora' href="#about">Sobre</a>
-                    <a className='ancora' href="">Dashboard</a>
-                    <a className='ancora' href="./Login.jsx">Entrar/Cadastrar</a>
+
+                    {/* <a className='ancora' href="">Início</a> */}
+                    <Link className='ancora' to={"/"}>Início</Link>
+                    {/* <a className='ancora' href="#about">Sobre</a> */}
+                    <Link className='ancora' to='#about'>Sobre</Link>
+                    <Link className='ancora' to="">Dashboard</Link>
+                     {/* <a className='ancora' href="">Dashboard</a> */}
+                    <Link className='ancora' to={"/login"}>Entrar/Cadastrar</Link>
+                    {/* <a className='ancora' href="./Login.jsx">Entrar/Cadastrar</a> */}
                 </div>
             </header>
 

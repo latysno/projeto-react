@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+    }
 .slide-item{
     width: 50%;
     height: 350px;
@@ -210,4 +213,27 @@ margin-top: 30px;
 }
 .redes p{
     padding-top: 30px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+}
+.select-cargo{
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    width: 400px;
+    height: 30px;
+}
+.email{
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    width: 400px;
+    height: 30px;
+}
+.senha{
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    width: 400px;
+    height: 30px;
 }
