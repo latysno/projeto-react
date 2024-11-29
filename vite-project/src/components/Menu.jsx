@@ -13,8 +13,9 @@ function Menu (){
             <header className="cabecalho">
                 <div className='teste'>
                     <a className='ancora' href="">Início</a>
-                    <a className='ancora' href="">Sobre</a> 
-                    <a className='ancora' href="./login.jsx">Entrar/Cadastrar</a>
+                    <a className='ancora' href="#about">Sobre</a>
+                    <a className='ancora' href="">Dashboard</a>
+                    <a className='ancora' href="./Login.jsx">Entrar/Cadastrar</a>
                 </div>
             </header>
 
@@ -42,7 +43,7 @@ function Menu (){
             </div>
 
             <div className='centralizar-title'>
-                <h1 className='titulo-somos'>Quem Somos?</h1>
+                <h1 className='titulo-somos' id='about'>Quem Somos?</h1>
                 <p className='paragrafo-somos'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas quasi consequatur distinctio odit itaque optio accusamus voluptatibus fugit eveniet consequuntur sunt corrupti, rem, necessitatibus qui nam error beatae nostrum.</p>
             </div>
             <div className='container'>
