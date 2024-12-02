@@ -1,4 +1,16 @@
+import { useState } from "react"
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+
+
+
 function Login(){
+    
+        const [inputType, setInputType] = useState("password")
+        const visibilityInput =()=>{
+            setInputType((value)=> (value === "password" ? "text" : "password"));
+        }
+
     return(
     <body>
         <form className="forms">
@@ -21,9 +33,11 @@ function Login(){
                 </div>
 
                 <div class="input-floating">
-                    <input type="password" id="input" placeholder=" " required/>
+                    <input type={inputType} id="input" placeholder=" " required/>
                     <label for="input">Senha</label>
+                    <button className="iconPassword" type="button" onClick={visibilityInput}>{inputType === "password" ? <VisibilityIcon/> : <VisibilityOffIcon/>}</button>  
                 </div>
+
                 <a className="esqueceu-senha" href="">ESQUECEU SUA SENHA ?</a>
                 <button className="button-login">LOGIN</button>
                 <p className="cadastrar">Não possui conta ? <a href="">Cadastre-se</a></p>

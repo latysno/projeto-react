@@ -264,6 +264,15 @@ margin-top: 30px;
     font-size: 12px;
     color: #007BFF;
 }
+.iconPassword{
+    position: absolute;
+    right: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 .title-login{
     padding-bottom: 50px;
 }
@@ -289,7 +298,7 @@ margin-top: 30px;
 }
 .esqueceu-senha{
     margin: 20px 0px;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #0e0d0d;
 }
 .cadastrar{
