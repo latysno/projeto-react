@@ -6,6 +6,10 @@ const data =[
     {id:2 , image:'https://i.pinimg.com/736x/2e/92/0e/2e920ec646bc047298f88c77368301f9.jpg'},
     {id:3 , image:'https://i.pinimg.com/enabled_lo_mid/736x/ad/53/73/ad5373e021426ed1e23aa68baff219fc.jpg'}
 ]
+import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 
 function Menu (){
@@ -110,21 +114,38 @@ function Menu (){
                 <div className='redes-socias'>
                     <div className='redes-colection'> 
                         <div className='redes'>
-                            <h3>EMAIL</h3>
+                            <div className='icon-social'>
+                                    <EmailIcon/> 
+                                    <h3>EMAIL</h3>
+                            </div>
+                    
                             <p>email@email.com.br</p>
                         </div>
                         <div className='redes'>
-                            <h3>INSTAGRAM</h3>
+                        <div className='icon-social'>
+                                <InstagramIcon/> 
+                                <h3>INSTAGRAM</h3>
+                        </div>
+
+                            
                             <p>@conta_conta</p>
                         </div>
                     </div>
                     <div className='redes-colection'>
                         <div className='redes'>
-                            <h3>WHATSAPP</h3>
+                        <div className='icon-social'>
+                                <WhatsAppIcon/> 
+                                <h3>WHATSAPP</h3>
+                        </div>
+                            
                             <p>(00) 0000-0000</p>
                         </div>
                         <div className='redes'>
-                            <h3>FACEBOOK</h3>
+                          <div className='icon-social'>
+                                <FacebookIcon/> 
+                                <h3>FACEBOOK</h3>
+                          </div>
+
                             <p>@conta_conta</p>
                         </div>
                     </div>
