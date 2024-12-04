@@ -1,12 +1,14 @@
 *{
     box-sizing: border-box;
-padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 html{
     scroll-behavior: smooth;
-    }
+   
+}
+
 .slide-item{
     width: 50%;
     height: 350px;
@@ -293,6 +295,7 @@ flex-direction: row;
     padding-bottom: 50px;
 }
 .loginPage{
+    width: 15%;
     display: flex;
     flex-direction: column;
     margin: 150px 200px;
@@ -300,7 +303,7 @@ flex-direction: row;
 
 .img_login img{
     position: absolute;
-    width:1096px;
+    width: 64.2%;
     height: 100%;
     object-fit: cover;
 }
@@ -326,3 +329,61 @@ flex-direction: row;
     text-decoration: none;
     color: #327AFF;
 }
+.forms-pai{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: 150px 100px;
+}
+.registrePage h1{
+    position: absolute;
+    margin-bottom: 30px;
+}
+.registrePage{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    width: 50vw;
+}
+.enviar-cadastro p{
+    width: 300px;
+    margin: 50px 50px;
+
+}
+.enviar-cadastro{
+    position: absolute;
+    margin: 30% 190px;
+
+}
+.button-cadastro{
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #3292FF;
+    color: #ffffff;
+    border: none;
+}
+
+.forms-1{
+    margin-top: 100px;
+    padding-right:5%;
+}
+.forms-2{
+    margin-top: 100px;
+
+}
+.forms-1 div{
+    padding-top: 6%;
+}
+.forms-2 div{
+    padding-top: 6%;
+}
+.img_cadastro img{
+    position: absolute;
+    margin-left: 8%;
+    width: 49.5%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
