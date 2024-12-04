@@ -1,6 +1,7 @@
 import { useState } from "react"
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import { Link } from "react-router-dom";
 
 
 
@@ -40,7 +41,7 @@ function Login(){
 
                 <a className="esqueceu-senha" href="">ESQUECEU SUA SENHA ?</a>
                 <button className="button-login">LOGIN</button>
-                <p className="cadastrar">Não possui conta ? <a href="">Cadastre-se</a></p>
+                <p className="cadastrar">Não possui conta ? <Link to={"/cadastrar"}>Cadastre-se</Link></p>
             </div>
             <div className="img_login">
                     <img src="./src/assets/image/imagem_login.jpg" alt="" srcset="" />
