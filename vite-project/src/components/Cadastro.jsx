@@ -74,7 +74,7 @@ function Cadastro (){
                         </div>
                         <div className="enviar-cadastro">
                             <button className="button-cadastro">CADASTRAR</button>
-                            <p>JÁ POSSUI CONTA <Link>FAZER LOGIN</Link></p>
+                            <p>Já possui conta ? <Link to={"/login"}>Fazer Login</Link></p>
                         </div>
                     
                     </form>
