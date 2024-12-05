@@ -21,10 +21,10 @@ function Login(){
                 <div className="input-floating">
                     <select className="select-cargo" name="cargo" id="select-cargo">
                         <option value="">CARGO</option>
-                        <option value="teste1">JAKSHDKAS</option>
-                        <option value="teste2">asdasd</option>
-                        <option value="teste3">dfgdfg</option>
-                        <option value="teste4">asdasdg</option>
+                        <option value="teste1">Gestor</option>
+                        <option value="teste2">Funcionário</option>
+                        <option value="teste3">Suporte Técnico</option>
+                        <option value="teste4">aaaaa</option>
                     </select>
                 </div>
 
