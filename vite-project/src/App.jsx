@@ -1,7 +1,7 @@
 import './App.css'
-import Menu from './components/Menu'
-import Login from './components/Login'
-import Cadastro from './components/Cadastro';
+import Menu from './page/Menu'
+import Login from './page/Login'
+import Cadastro from './page/cadastro/Cadastro';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {

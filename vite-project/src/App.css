@@ -192,7 +192,8 @@ margin-top: 30px;
 .parceiros{
     position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 420px;
     margin-top: 10px;
     margin-left: 1300px;
 }
@@ -241,7 +242,7 @@ flex-direction: row;
     border: none;
     border-bottom: 1.5px solid;
     width: 350px;
-    height: 30px;
+    height: 41px;
     outline: none;
 }
 
@@ -358,14 +359,7 @@ flex-direction: row;
     margin: 30% 190px;
 
 }
-.button-cadastro{
-    width: 350px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: #3292FF;
-    color: #ffffff;
-    border: none;
-}
+
 
 .forms-1{
     margin-top: 100px;
@@ -382,9 +376,8 @@ flex-direction: row;
     padding-top: 6%;
 }
 
-.img_cadastro img{
+.img_cadastro{
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }

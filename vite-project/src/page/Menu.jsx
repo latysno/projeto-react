@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 const data =[
     {id:1 , image:'https://i.pinimg.com/736x/e3/02/4b/e3024bd9175a500bb1a88bcd1b480f59.jpg'},
     {id:2 , image:'https://i.pinimg.com/736x/2e/92/0e/2e920ec646bc047298f88c77368301f9.jpg'},
+    {id:3 , image:'https://i.pinimg.com/enabled_lo_mid/736x/ad/53/73/ad5373e021426ed1e23aa68baff219fc.jpg'},
+    {id:1 , image:'https://i.pinimg.com/736x/e3/02/4b/e3024bd9175a500bb1a88bcd1b480f59.jpg'},
+    {id:2 , image:'https://i.pinimg.com/736x/2e/92/0e/2e920ec646bc047298f88c77368301f9.jpg'},
     {id:3 , image:'https://i.pinimg.com/enabled_lo_mid/736x/ad/53/73/ad5373e021426ed1e23aa68baff219fc.jpg'}
 ]
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -100,16 +103,9 @@ function Menu (){
                     <h2>Parcerias</h2>
                 </div>
                 <div className='parceiros'>
-                    <div className='father-parceiro'>
-                        <div className='parceiro-bloco'></div>
-                        <div className='parceiro-bloco'></div>
-                        <div className='parceiro-bloco'></div>
-                    </div>
-                    <div className='father-parceiro'>
-                        <div className='parceiro-bloco'></div>
-                        <div className='parceiro-bloco'></div>
-                        <div className='parceiro-bloco'></div>
-                    </div>
+                    {
+                        data.map(item => <img className='parceiro-bloco' src={item.image}/>)
+                    }
                 </div>
                 <div className='redes-socias'>
                     <div className='redes-colection'> 

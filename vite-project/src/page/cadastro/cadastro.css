@@ -1,0 +1,41 @@
+.container-cadastro{
+    display: flex;
+}
+.container-form-cadastro{
+    width: 60%;
+    height: 100vh;
+    position: relative;
+}
+.container-form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.background-image{
+    background-image: url("../../assets/image/imagem_login.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 100vh;
+}
+.form{
+    display: flex;
+    gap: 2rem;
+    margin: 8rem 0;
+}
+.button-cadastro{
+    align-self: center;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #3292FF;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 2rem;
+}
+.possui-conta{
+    align-self: center;  
+}
