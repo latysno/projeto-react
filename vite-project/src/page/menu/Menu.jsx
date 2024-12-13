@@ -1,5 +1,6 @@
+import "./menu.css"
 import {Swiper, SwiperSlide} from 'swiper/react'
-import tailwindConfig from '../../tailwind.config'
+import tailwindConfig from '../../../tailwind.config'
 import { Link } from 'react-router-dom'
 const data =[
     {id:1 , image:'https://i.pinimg.com/736x/e3/02/4b/e3024bd9175a500bb1a88bcd1b480f59.jpg'},
@@ -98,54 +99,58 @@ function Menu (){
             </div>
             
             <footer className='rodape'>
-                <div className='subtitles-footer'>
-                    <h2>Fale Conosco</h2>
-                    <h2>Parcerias</h2>
-                </div>
-                <div className='parceiros'>
+                <div className="container-rodape">
+                    <div className='redes-sociais'>
+                        <h1 className="title">FALE CONOSCO:</h1>
+                        <div className='redes-colection'> 
+                            <div className='redes'>
+                                <div className='icon-social'>
+                                        <EmailIcon/> 
+                                        <h3>EMAIL</h3>
+                                </div>
+                        
+                                <p>email@email.com.br</p>
+                            </div>
+                            <div className='redes'>
+                                <div className='icon-social'>
+                                        <InstagramIcon/> 
+                                        <h3>INSTAGRAM</h3>
+                                </div>
+
+                                
+                                <p>@conta_conta</p>
+                            </div>
+                        </div>
+                        <div className='redes-colection'>
+                            <div className='redes'>
+                            <div className='icon-social'>
+                                    <WhatsAppIcon/> 
+                                    <h3>WHATSAPP</h3>
+                            </div>
+                                
+                                <p>(00) 0000-0000</p>
+                            </div>
+                            <div className='redes'>
+                                <div className='icon-social'>
+                                        <FacebookIcon/> 
+                                        <h3>FACEBOOK</h3>
+                                </div>
+
+                                <p>@conta_conta</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='parceiros'>
+                        <h1 className="title">PARCERIAS:</h1>
                     {
                         data.map(item => <img className='parceiro-bloco' src={item.image}/>)
                     }
-                </div>
-                <div className='redes-socias'>
-                    <div className='redes-colection'> 
-                        <div className='redes'>
-                            <div className='icon-social'>
-                                    <EmailIcon/> 
-                                    <h3>EMAIL</h3>
-                            </div>
-                    
-                            <p>email@email.com.br</p>
-                        </div>
-                        <div className='redes'>
-                        <div className='icon-social'>
-                                <InstagramIcon/> 
-                                <h3>INSTAGRAM</h3>
-                        </div>
-
-                            
-                            <p>@conta_conta</p>
-                        </div>
-                    </div>
-                    <div className='redes-colection'>
-                        <div className='redes'>
-                        <div className='icon-social'>
-                                <WhatsAppIcon/> 
-                                <h3>WHATSAPP</h3>
-                        </div>
-                            
-                            <p>(00) 0000-0000</p>
-                        </div>
-                        <div className='redes'>
-                          <div className='icon-social'>
-                                <FacebookIcon/> 
-                                <h3>FACEBOOK</h3>
-                          </div>
-
-                            <p>@conta_conta</p>
-                        </div>
                     </div>
                 </div>
+             
+                
+                
+
             </footer>
         </body>
         

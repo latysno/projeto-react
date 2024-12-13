@@ -1,5 +1,5 @@
 import './App.css'
-import Menu from './page/Menu'
+import Menu from './page/menu/Menu'
 import Login from './page/Login'
 import Cadastro from './page/cadastro/Cadastro';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
