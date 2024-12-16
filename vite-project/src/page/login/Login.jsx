@@ -1,3 +1,4 @@
+import "./login.css"
 import { useState } from "react"
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
@@ -44,9 +45,9 @@ function Login(){
                 <p className="cadastrar">Não possui conta ? <Link to={"/cadastrar"}>Cadastre-se</Link></p>
             </div>
            
-            <div className="img_login">
-                    <img src="./src/assets/image/imagem_login.jpg" alt="" srcset="" />
-            </div>
+            <div className="img_login"></div>
+                    {/* <img src="./src/assets/image/imagem_login.jpg" alt="" srcset="" /> */}
+
         </form>
             
     </body>
