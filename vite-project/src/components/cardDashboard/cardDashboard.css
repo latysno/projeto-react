@@ -1,0 +1,21 @@
+.card-dashboard{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 16px;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
+}
+.container-button{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.details-card-dashboard{
+    border: none;
+    border-radius: 2rem;
+    width: 100px;
+    height: 2rem;
+}
