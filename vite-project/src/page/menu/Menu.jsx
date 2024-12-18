@@ -26,7 +26,7 @@ function Menu (){
                     <Link className='ancora' to={"/"}>Início</Link>
                     {/* <a className='ancora' href="#about">Sobre</a> */}
                     <Link className='ancora' to='#about'>Sobre</Link>
-                    <Link className='ancora' to="">Dashboard</Link>
+                    <Link className='ancora' to="/dashboard">Dashboard</Link>
                      {/* <a className='ancora' href="">Dashboard</a> */}
                     <Link className='ancora' to={"/login"}>Entrar/Cadastrar</Link>
                     {/* <a className='ancora' href="./Login.jsx">Entrar/Cadastrar</a> */}

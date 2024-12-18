@@ -1,8 +1,10 @@
 import CardDashboard from "../../components/cardDashboard/CardDashboard";
 import CardNumbers from "../../components/cardNumbers/CardNumbers";
+import GraphDashboard from "../../components/graphDashboard/GraphDashboard";
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
+import './dashboard.css'
 
 
 function Dashboard(){
@@ -35,40 +37,70 @@ function Dashboard(){
             buttonColorHover:"#0F6F1D"
 
         }]
+
     const cardsGraphs=[{
-        title: 'teste',
-        valueGraph: 123,
-        color:"#FFFFFF"
-    }]
+            title: 'teste',
+            valueGraph: 123,
+            color:"#FFFFFF"
+        },
+        {
+            title: 'teste',
+            valueGraph: 123,
+            color:"#FFFFFF"
+        },
+        {
+            title: 'teste',
+            valueGraph: 123,
+            color:"#FFFFFF"
+        },
+        {
+            title: 'teste',
+            valueGraph: 123,
+            color:"#FFFFFF"
+        }]
+
+    
+
     return(
         <div className="container-dashboard">
-            {!!propCards && propCards.map(card=>{
-                return (
-                   
-                        <CardDashboard 
-                            title={card.title} 
-                            value={card.value} 
-                            icon={card.icon}
-                            auxTitle={card.auxTitle}
+            <div className="cards-container">
+             {!!cardsGraphs && cardsGraphs.map(card=>{
+                return(
+                        
+                            <CardNumbers
+                            title={card.title}
+                            valueGraph={card.valueGraph}
                             color={card.color}
-                            buttonColor={card.buttonColor}
-                            buttonColorHover={card.buttonColorHover}
-
-                        />
-                        
-                        
+                            />
+                       
                     )
                 })}
+            </div>
 
-            {!!cardsGraphs && cardsGraphs.map(card=>{
-                return(
-                    <CardNumbers
-                    title={card.title}
-                    valueGraph={card.valueGraph}
-                    color={card.color}
-                    />
-                )
-                })}
+            <div className="cards-container">
+                <GraphDashboard/>
+            </div>
+
+            <div className="cards-container">
+                {!!propCards && propCards.map(card=>{
+                    return (
+                    
+                            <CardDashboard 
+                                title={card.title} 
+                                value={card.value} 
+                                icon={card.icon}
+                                auxTitle={card.auxTitle}
+                                color={card.color}
+                                buttonColor={card.buttonColor}
+                                buttonColorHover={card.buttonColorHover}
+
+                            />
+                            
+                            
+                        )
+                    })}
+            </div>
+                
         </div>
     )
 }
