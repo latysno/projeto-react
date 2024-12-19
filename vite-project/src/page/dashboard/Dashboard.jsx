@@ -1,6 +1,7 @@
 import CardDashboard from "../../components/cardDashboard/CardDashboard";
 import CardNumbers from "../../components/cardNumbers/CardNumbers";
 import GraphDashboard from "../../components/graphDashboard/GraphDashboard";
+import GraphDashboardSecond from "../../components/graphDashboard/GraphDashboardSecond";
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
@@ -59,7 +60,7 @@ function Dashboard(){
             color:"#FFFFFF"
         }]
 
-    
+        
 
     return(
         <div className="container-dashboard">
@@ -79,8 +80,8 @@ function Dashboard(){
 
             <div className="cards-container">
                 <GraphDashboard/>
+                <GraphDashboardSecond/>
             </div>
-
             <div className="cards-container">
                 {!!propCards && propCards.map(card=>{
                     return (
@@ -94,9 +95,7 @@ function Dashboard(){
                                 buttonColor={card.buttonColor}
                                 buttonColorHover={card.buttonColorHover}
 
-                            />
-                            
-                            
+                            />     
                         )
                     })}
             </div>
