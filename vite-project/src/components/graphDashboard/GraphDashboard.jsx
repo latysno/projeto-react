@@ -13,7 +13,7 @@ function GraphDashboard(){
     
   return (
     
-      <Chart chartType="ColumnChart" width="50%" height="50%" data={data} options={{
+      <Chart chartType="ColumnChart" width="500px" height="50%" data={data} options={{
         backgroundColor:'#fff',
         title: 'BarGraph'
       }} />

@@ -11,7 +11,7 @@ import "./graphDashboard.css"
       ];
     
   return (
-      <Chart chartType="ColumnChart" width="50%" height="50%" data={teste} options={{
+      <Chart chartType="ColumnChart" width="500px" height="50%" data={teste} options={{
         backgroundColor:'#fff',
         title: 'BarGraph'
       }} />
