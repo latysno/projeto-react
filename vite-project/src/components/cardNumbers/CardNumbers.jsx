@@ -4,7 +4,7 @@ function CardNumbers ({title, valueGraph, color}){
 
     return(
         <div className="container-card" style={{backgroundColor:color}}>
-             <h4>{title}</h4>
+             <h4 className="title-card-number">{title}</h4>
              <p>{valueGraph}</p>
         </div>
     )

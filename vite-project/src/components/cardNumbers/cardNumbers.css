@@ -1,11 +1,14 @@
 .container-card{
-    width: 200px;
+    width: 350px;
     height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 16px;
     gap: 2rem;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.37);
 
+}
+.title-card-number{
+    margin-top: 5%;
 }

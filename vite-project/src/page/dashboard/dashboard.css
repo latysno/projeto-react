@@ -1,7 +1,30 @@
 .container-dashboard{
-    margin: 4rem 4rem;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards-container-mini{
+    display: flex;
+    gap: 2.5rem;
+}
+.cards-container-graph{
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 0;
 }
 .cards-container{
     display: flex;
-    gap: 2rem
+    gap: 5.5rem;
+}
+.container-graphics{
+    background-color: #fff;
+    border-radius: 20px;
+    height: 350px;
+    width: 750px;
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.322);
+}
+.child-container-graphics{
+    margin-top: 4.5rem;
+    overflow: hidden;
 }
