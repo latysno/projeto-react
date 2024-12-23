@@ -1,3 +1,28 @@
+.ancora{
+    padding: 0px 20px; 
+    text-decoration: none;
+    
+}
+.cabecalho-dashboard{
+    display: flex;
+    justify-content: end;    
+    width: 100%;
+    background-color: #ffffff  ;
+    padding-top: 15px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 3px 1px  rgba(0, 0, 0, 0.315);
+    margin-bottom: 6rem;
+    padding: 1.5rem 0;
+}
+
+
+.menu-burguer-icon{
+    position: absolute;
+    left: 3rem;
+    top: 6rem;
+    font-size: large;
+    cursor: pointer;
+}
 .container-dashboard{
     background-color: #F5F5F5;
     display: flex;

@@ -5,6 +5,8 @@ import GraphDashboardSecond from "../../components/graphDashboard/GraphDashboard
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
+import { Link } from 'react-router-dom'
+import AppsIcon from '@mui/icons-material/Apps';
 import './dashboard.css'
 
 
@@ -41,37 +43,73 @@ function Dashboard(){
 
     const cardsGraphs=[{
             title: 'SEXO',
-            valueGraph: 123,
-            color:"#FFFFFF"
+            subTitleGraph: "teste",
+            value: 50,
+            color:"#FFFFFF",
+            colorGraph:"#d3d3d3",
+            progressColor:"#4caf50"
         },
         {
             title: 'TIPO DE DOMICÍLIO',
-            valueGraph: 123,
-            color:"#FFFFFF"
+            subTitleGraph: "teste",
+            value: 20,
+            color:"#FFFFFF",
+            colorGraph:"#d3d3d3",
+            progressColor:"#4caf50"
+
         },
         {
             title: 'NÍVEL DE ESCOLARIDADE',
-            valueGraph: 123,
-            color:"#FFFFFF"
+            subTitleGraph: "teste",
+            value: 33,
+            color:"#FFFFFF",
+            colorGraph:"#d3d3d3",
+            progressColor:"#4caf50"
+
         },
         {
             title: 'IDENTIDADE RACIAL',
-            valueGraph: 123,
-            color:"#FFFFFF"
+            subTitleGraph: "teste",
+            value: 40,
+            color:"#FFFFFF",
+            colorGraph:"#d3d3d3",
+            progressColor:"#4caf50"
+            
         }]
 
         
 
     return(
+        
         <div className="container-dashboard">
+            <header className="cabecalho-dashboard">
+                <div className='container-header-dashboard'>
+
+                    {/* <a className='ancora' href="">Início</a> */}
+                    <Link className='ancora' to={"/"}>Início</Link>
+                    {/* <a className='ancora' href="#about">Sobre</a> */}
+                    <Link className='ancora' to='#about'>Sobre</Link>
+                    <Link className='ancora' to="/dashboard">Dashboard</Link>
+                     {/* <a className='ancora' href="">Dashboard</a> */}
+                    <Link className='ancora' to={"/login"}>Entrar/Cadastrar</Link>
+                    {/* <a className='ancora' href="./Login.jsx">Entrar/Cadastrar</a> */}
+                </div>
+            </header>
+            <div className="menu-burguer-icon">
+                <AppsIcon sx={{ fontSize: 50 }}/>
+            </div>
+
             <div className="cards-container-mini">
              {!!cardsGraphs && cardsGraphs.map(card=>{
                 return(
                         
                             <CardNumbers
                             title={card.title}
-                            valueGraph={card.valueGraph}
+                            subTitleGraph={card.subTitleGraph}
+                            value={card.value}
                             color={card.color}
+                            colorGraph={card.colorGraph}
+                            progressColor={card.progressColor}
                             />
                        
                     )
@@ -81,7 +119,7 @@ function Dashboard(){
             <div className="cards-container-graph">
                 <div className="container-graphics">
                     <div className="child-container-graphics">
-                        <GraphDashboard/>
+                    <GraphDashboard/>
                     </div>
                 </div>
                 <div className="container-graphics">
