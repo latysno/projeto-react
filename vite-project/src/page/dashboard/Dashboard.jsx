@@ -6,7 +6,7 @@ import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 import { Link } from 'react-router-dom'
-import AppsIcon from '@mui/icons-material/Apps';
+import MenuBurguer from "../../components/menuBurguer/MenuBurguer";
 import './dashboard.css'
 
 
@@ -95,8 +95,9 @@ function Dashboard(){
                     {/* <a className='ancora' href="./Login.jsx">Entrar/Cadastrar</a> */}
                 </div>
             </header>
+
             <div className="menu-burguer-icon">
-                <AppsIcon sx={{ fontSize: 50 }}/>
+                <MenuBurguer/>
             </div>
 
             <div className="cards-container-mini">
