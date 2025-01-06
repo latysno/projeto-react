@@ -26,10 +26,15 @@ function MenuBurguer(){
             {/* Menu de opções */}
             <nav className={`menu-opcoes ${openMenu ? 'ativo' : ''}`}>
                 <ul>
-                    <li>{<AddIcon sx={{fontSize:25}}/>}<a href="#opcao1">Adicionar dados</a></li>
-                    <li>{<DeleteOutlineIcon sx={{fontSize:25}}/>}<a href="#opcao2">Deletar dados</a></li>
-                    <li>{<ModeEditOutlineIcon sx={{fontSize:25}}/>}<a href="#opcao3">Editar dados</a></li>
-                    <li>{<PersonAddAltIcon sx={{fontSize:25}}/>}<a href="#opcao4">Adicionar usuário</a></li>
+                    
+                    <li><div>{<AddIcon sx={{fontSize:25}}/>}</div>
+                    <a href="#opcao1">Adicionar dados</a></li>
+                    <li><div>{<DeleteOutlineIcon sx={{fontSize:25}}/>}</div>
+                    <a href="#opcao2">Deletar dados</a></li>
+                    <li><div>{<ModeEditOutlineIcon sx={{fontSize:25}}/>}</div>
+                    <a href="#opcao3">Editar dados</a></li>
+                    <li><div>{<PersonAddAltIcon sx={{fontSize:25}}/>}</div>
+                    <a href="#opcao4">Adicionar usuário</a></li>
                 </ul>
             </nav>
         </div>

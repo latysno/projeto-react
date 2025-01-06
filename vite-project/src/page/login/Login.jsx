@@ -5,9 +5,19 @@ import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { Link } from "react-router-dom";
 
 
+const dados = [
+    {mail: 'teste', password: 'teste'},
+    {mail: 'teste1', password: 'teste1'}
+];
+
 
 function Login(){
     
+    const [mail, setMail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+
+
         const [inputType, setInputType] = useState("password")
         const visibilityInput =()=>{
             setInputType((value)=> (value === "password" ? "text" : "password"));
